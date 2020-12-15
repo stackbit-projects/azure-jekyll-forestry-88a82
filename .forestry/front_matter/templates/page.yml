@@ -19,8 +19,7 @@ fields:
 - type: file
   name: img_path
   label: Image
-  description: >-
-    The image shown on the left side. If no image added, the default image
+  description: The image shown on the left side. If no image added, the default image
     specified in Header Configuration is displayed.
 - type: text
   name: layout
