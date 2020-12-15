@@ -1,0 +1,101 @@
+title: Stackbit Fjord Theme
+baseurl: /
+permalink: '/:title/'
+description: A minimal blogging theme for Stackbit
+palette: yellow
+header:
+  type: header
+  template: header
+  title: Fjord
+  tagline: Minimal and clean blog theme
+  logo_img: images/logo.png
+  background_img: images/header-bg.jpg
+  has_nav: true
+  nav_links:
+    - type: action
+      template: action
+      label: Home
+      url: /
+      style: link
+    - type: action
+      template: action
+      label: About
+      url: /about
+      style: link
+    - type: action
+      template: action
+      label: Style Guide
+      url: /style-guide
+      style: link
+    - type: action
+      template: action
+      label: Contact
+      url: /contact
+      style: link
+  has_social: true
+  social_links:
+    - type: action
+      template: action
+      label: Twitter
+      url: 'https://twitter.com/'
+      style: icon
+      icon_class: fa-twitter
+      new_window: true
+    - type: action
+      template: action
+      label: Instagram
+      url: 'https://www.instagram.com/'
+      style: icon
+      icon_class: fa-instagram
+      new_window: true
+    - type: action
+      template: action
+      label: GitHub
+      url: 'https://github.com/'
+      style: icon
+      icon_class: fa-github
+      new_window: true
+    - type: action
+      template: action
+      label: LinkedIn
+      url: 'https://www.linkedin.com/'
+      style: icon
+      icon_class: fa-linkedin
+      new_window: true
+    - type: action
+      template: action
+      label: DEV
+      url: 'https://dev.to/'
+      style: icon
+      icon_class: fa-dev
+      new_window: true
+footer:
+  type: footer
+  template: footer
+  content: >-
+    &copy; Stackbit. All rights reserved. This Jamstack site was created on <a
+    href="https://www.stackbit.com" target="_blank" rel="noopener">Stackbit</a>.
+    Get yours <a href="https://app.stackbit.com/create?theme=fjord"
+    target="_blank" rel="noopener">here</a>.
+sass:
+  indentWidth: 4
+  style: nested
+  precision: 10
+plugins:
+  - jekyll-menus
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - README.md
+  - netlify.toml
+  - stackbit-build.sh
+  - stackbit-pull.js
+collections:
+  posts:
+    permalink: '/posts/:title/'
